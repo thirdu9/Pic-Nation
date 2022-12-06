@@ -1,2 +1,0 @@
-# PIC-NATION
-## pic nation
