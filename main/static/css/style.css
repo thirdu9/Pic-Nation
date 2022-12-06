@@ -1,0 +1,177 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.pgdiv1{
+    background-image: url("img/bg4.jpg");
+    background-size: cover;
+}
+
+.pgdiv2{
+    height: 500px;;
+    background-image: url("img/bg2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pgdiv3{
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+}
+
+.pgdiv4{
+    height: 500px;
+    background-image: url("img/bg3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pgdiv5{
+    background-image: url("img/bg5.jpg");
+    background-size: cover;
+}
+
+
+.img1{
+    justify-content: center;
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.img2{
+    justify-content: center;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.div-title{
+    color: white;
+    font-size: 40px;
+}
+
+.team .team-div{
+    display: flex;
+    flex-direction: column;
+
+    border:2px solid cyan;
+
+    width:40%;
+    text-align: center;
+    float: left;
+    height: 200px;
+    margin:20px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+.home-nav{
+    margin: 0;
+    padding: 0;
+    background-image: url("img/bg6.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.home-nav li{
+    display: inline;
+    padding: 0;
+    margin: 0;
+
+}
+
+.home-nav a:link,
+.home-nav a:visited{
+    color: black;
+    text-align: right;
+
+    font-size: 30px;
+
+
+    text-decoration: none;
+    background: none;
+    padding: 20px 60px 2px 4px;
+    float: left;
+    width: auto;    
+}
+
+.home-nav a:hover{
+    color: white;
+    font-size: 40px;
+    padding: 30px 80px 2px 4px;
+    text-shadow: 1px 1px lightcyan;
+}
+
+.home-qoute{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+.home-info{
+    font-size: 40px;
+    width: 50%;
+    margin-right: 100px;
+    margin-left: 300px;
+}
+
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 35%;
+    height: 50%;
+
+    font-size: 40px;
+
+    margin-right: 600px;
+    margin-left: 50px;
+}
+
+
+.about-img{
+    width: 50%;
+    align-items: right;
+
+}
+
+.about-img img{
+    justify-content: center;
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 80px;
+}
+
+.contact{
+    width: 30%;
+    height: 30%;
+
+    font-size: 50px;
+    flex-direction: column;
+    align-items: left top;
+    padding: 0;
+    
+    margin-right: 70%;
+    margin-left: 20px;
+    margin-bottom: 500px;
+}
