@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'bs5/bootstrap.min.css' %}">
+    <title>SIGNUP</title>
+    <style>
+        *
+        {
+            margin: 0 0;
+            font-size: large;
+        }
+        .box
+        {
+            margin: 5px 5px;
+            padding: auto auto auto auto;
+            height:100vh;
+            top: ;
+            left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lo
+        {
+            background-image: linear-gradient(45deg, rgb(100, 98, 98, 0.5), transparent);
+            box-shadow: 2px 2px black;
+            width: auto;
+            height: fit-content;
+            padding: 5px;
+        }
+        input[type=text], input[type=password]
+        {
+            width:auto;
+            margin: 8px auto;
+            display: inline-block;
+            box-sizing: border-box;
+            border: transparent;
+            text-align: center;
+            border-radius: 25px;
+
+        }
+        input[type=text]::placeholder, input[type=password]::placeholder
+        {
+
+        }
+        h1{
+            font-size: 10vh;
+        }
+        td
+        {
+            padding: 6px;
+        }
+    </style>
+</head>
+<body style="background-image: linear-gradient(45deg, #FBC2EB, #78A3EB); padding: 0% ;">
+    <div class="box">
+        <form method='POST' action="">
+            {% csrf_token %}
+            <div class="lo">
+                <center>
+                <h1>Pic-Nation Dvāra</h1>
+                <br>
+                <table style="padding: 5px 5px;">
+                    {{form.as_table}}
+                </table>
+                <input class="btn btn-primary" type="submit" value="Sign Up">
+            </center>
+                <br>
+            </div>
+            <p class="text-success">{{msg}}</p>
+        </form>
+    </div>
+</body>
+</html>
